@@ -1,0 +1,5 @@
+# NewShop — https://newshop.work/
+User-agent: *
+Allow: /
+
+Sitemap: https://newshop.work/sitemap.xml

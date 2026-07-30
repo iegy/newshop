@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NewShop — برنامج كاشير ومخزون وفواتير للمحلات | يشتغل أوفلاين بدون إنترنت</title>
+<meta name="description" content="برنامج NewShop لإدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، فواتير A4، مشتريات وموردين، عملاء وآجل، جرد، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز بدون اشتراك شهري.">
+<meta name="keywords" content="برنامج كاشير, برنامج مخزون, برنامج فواتير, برنامج محلات, برنامج سوبر ماركت, برنامج مبيعات عربي, كاشير أوفلاين, برنامج جرد, برنامج باركود">
+<meta name="author" content="محمد حسين علي">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#5c6b4a">
+
+<link rel="canonical" href="https://newshop.work/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NewShop">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:title" content="NewShop — برنامج كاشير ومخزون وفواتير للمحلات">
+<meta property="og:description" content="كاشير بالباركود، فواتير A4، مخزون وأرباح دقيقة. يشتغل أوفلاين 100% على ويندوز. دفعة واحدة بدون اشتراك شهري.">
+<meta property="og:url" content="https://newshop.work/">
+<meta property="og:image" content="https://newshop.work/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NewShop — برنامج إدارة المبيعات والمخزون">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NewShop — برنامج كاشير ومخزون وفواتير للمحلات">
+<meta name="twitter:description" content="كاشير بالباركود، فواتير A4، مخزون وأرباح دقيقة. يشتغل أوفلاين 100% على ويندوز.">
+<meta name="twitter:image" content="https://newshop.work/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mark.svg">
+<link rel="preload" as="font" type="font/woff2" href="font-arabic-700.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="font-arabic-400.woff2" crossorigin>
+
+<style>
+/* ===== الخطوط (محمّلة محليًا — مفيش أي طلب خارجي) ===== */
+@font-face{font-family:Cairo;src:url(font-arabic-400.woff2)format('woff2');font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:Cairo;src:url(font-arabic-600.woff2)format('woff2');font-weight:600;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:Cairo;src:url(font-arabic-700.woff2)format('woff2');font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:Cairo;src:url(font-arabic-800.woff2)format('woff2');font-weight:800;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:Cairo;src:url(font-latin-400.woff2)format('woff2');font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Cairo;src:url(font-latin-600.woff2)format('woff2');font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Cairo;src:url(font-latin-700.woff2)format('woff2');font-weight:700;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Cairo;src:url(font-latin-800.woff2)format('woff2');font-weight:800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ===== الألوان ===== */
+:root{
+  --bg:#fffefb; --surface:#f4f2ec; --line:#e2ddd0;
+  --b900:#333d28; --b700:#5c6b4a; --b500:#8d9a7b; --b300:#afbb9c; --b100:#dfe5d6; --b50:#eef1e8;
+  --accent:#a9764a; --accent-soft:#f6ede3;
+  --ink:#22261f; --ink2:#4e5447; --ink3:#6e7366;
+  --r:14px; --rs:10px;
+  --shadow:0 1px 2px rgba(40,45,30,.05),0 8px 24px rgba(40,45,30,.07);
+  --shadow-lg:0 12px 48px rgba(40,45,30,.16);
+  --wrap:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Cairo,system-ui,'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--b700)}
+h1,h2,h3{line-height:1.3;margin:0 0 .5em}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.3px}
+h3{font-size:19px;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;right:-9999px;top:0;background:var(--b700);color:#fff;padding:10px 18px;z-index:100;border-radius:0 0 8px 8px}
+.skip:focus{right:20px}
+:focus-visible{outline:3px solid var(--b700);outline-offset:3px;border-radius:6px}
+
+/* ===== الأزرار ===== */
+.btn{display:inline-flex;align-items:center;gap:9px;font:inherit;font-weight:700;font-size:16px;
+  padding:13px 26px;border-radius:var(--rs);border:2px solid transparent;cursor:pointer;
+  text-decoration:none;transition:.15s;white-space:nowrap}
+.btn-main{background:var(--b700);color:#fff}
+.btn-main:hover{background:var(--b900)}
+.btn-ghost{background:#fff;color:var(--b900);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--b500);background:var(--b50)}
+.btn-wa{background:#1d8548;color:#fff}
+.btn-wa:hover{background:#166b3b}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+
+/* ===== الهيدر ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(255,254,251,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:26px;height:72px}
+.nav .logo img{height:40px;width:auto}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;flex:1}
+.nav a.lnk{color:var(--ink2);text-decoration:none;font-weight:600;font-size:15px}
+.nav a.lnk:hover{color:var(--b700)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 11px;font-size:19px;cursor:pointer;color:var(--ink)}
+
+/* ===== الهيرو ===== */
+.hero{padding:64px 0 40px;background:
+  radial-gradient(1000px 460px at 88% -8%,var(--b50),transparent 62%),
+  radial-gradient(760px 380px at 4% 4%,var(--accent-soft),transparent 58%)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  color:var(--b700);font-weight:700;font-size:13.5px;padding:6px 14px;border-radius:100px;margin-bottom:18px}
+.hero h1{font-size:clamp(31px,5.1vw,50px);font-weight:800;letter-spacing:-.6px;margin-bottom:18px}
+.hero h1 .hi{color:var(--b700)}
+.lead{font-size:clamp(16.5px,2vw,19px);color:var(--ink2);max-width:41ch}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 22px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.chips li{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);
+  border-radius:100px;padding:6px 14px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+.chips b{color:var(--b700)}
+.hero-shot{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line);background:#fff}
+
+/* ===== الأقسام ===== */
+section{padding:76px 0}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 46px}
+.sec-head p{color:var(--ink2);font-size:17px;margin:0}
+.kicker{color:var(--b700);font-weight:800;font-size:14px;letter-spacing:.6px;margin-bottom:8px}
+.alt{background:var(--surface)}
+
+/* ===== المميزات ===== */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.card .ic{width:46px;height:46px;border-radius:12px;background:var(--b50);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.card h3{margin-bottom:6px}
+.card p{color:var(--ink2);font-size:15px;margin:0}
+
+/* ===== معرض الشاشات ===== */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+.tab{font:inherit;font-weight:600;font-size:14.5px;padding:9px 18px;border-radius:100px;
+  border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;transition:.15s}
+.tab:hover{border-color:var(--b500)}
+.tab[aria-selected=true]{background:var(--b700);color:#fff;border-color:var(--b700)}
+.shot-box{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-lg);background:#fff}
+.shot-box img{width:100%}
+.shot-cap{text-align:center;color:var(--ink3);font-size:14.5px;margin-top:14px}
+
+/* ===== ليه NewShop ===== */
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.why .card{display:flex;gap:16px;align-items:flex-start}
+.why .ic{flex:0 0 46px;margin:0}
+
+/* ===== الخطوات ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;position:relative;box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-16px;inset-inline-start:24px;
+  width:38px;height:38px;border-radius:50%;background:var(--b700);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
+.step h3{margin-top:10px}
+.step p{color:var(--ink2);font-size:15px;margin:0}
+
+/* ===== الأسئلة الشائعة ===== */
+.faq{max-width:820px;margin:0 auto}
+details{background:#fff;border:1px solid var(--line);border-radius:var(--rs);margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;font-weight:700;padding:17px 20px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:23px;color:var(--b700);font-weight:400;line-height:1}
+details[open] summary::after{content:"−"}
+details[open] summary{border-bottom:1px solid var(--line)}
+details .ans{padding:16px 20px;color:var(--ink2);font-size:15.5px}
+details .ans p:last-child{margin:0}
+
+/* ===== نداء أخير ===== */
+.final{background:linear-gradient(150deg,var(--b700),var(--b900));color:#fff;text-align:center;border-radius:22px;padding:56px 28px}
+.final h2{color:#fff}
+.final p{color:rgba(255,255,255,.9);max-width:52ch;margin:0 auto 26px;font-size:17px}
+.final .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.final .btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
+
+/* ===== الفوتر ===== */
+footer{background:var(--b900);color:rgba(255,255,255,.8);padding:52px 0 26px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px;margin-bottom:34px}
+footer img{height:44px;width:auto}
+footer h4{color:#fff;font-size:15px;margin:0 0 12px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:8px}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.copy{border-top:1px solid rgba(255,255,255,.16);padding-top:20px;text-align:center;font-size:13.5px;color:rgba(255,255,255,.6)}
+
+/* ===== زرار واتساب عائم ===== */
+.fab{position:fixed;inset-inline-start:20px;bottom:20px;z-index:60;background:#1d8548;color:#fff;
+  width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.26);
+  text-decoration:none;transition:.15s}
+.fab:hover{background:#166b3b;transform:scale(1.06)}
+.fab svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+  .hero-grid,.why{grid-template-columns:1fr}
+  .feat,.steps{grid-template-columns:repeat(2,1fr)}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .nav ul{display:none;position:absolute;top:72px;inset-inline:0;background:#fff;flex-direction:column;
+    gap:0;padding:10px 20px 18px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .nav ul.open{display:flex}
+  .nav ul li{padding:9px 0;border-bottom:1px solid var(--line)}
+  .burger{display:block;margin-inline-start:auto}
+  .nav .btn{display:none}
+  section{padding:56px 0}
+  .hero{padding:40px 0 24px}
+}
+@media(max-width:560px){
+  .feat,.steps{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+  .cta-row .btn{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#" aria-label="NewShop — الصفحة الرئيسية">
+      <img src="logo.svg" alt="NewShop" width="330" height="84">
+    </a>
+    <ul id="menu">
+      <li><a class="lnk" href="#features">المميزات</a></li>
+      <li><a class="lnk" href="#screens">الشاشات</a></li>
+      <li><a class="lnk" href="#why">ليه NewShop</a></li>
+      <li><a class="lnk" href="#how">إزاي تشتريه</a></li>
+      <li><a class="lnk" href="#faq">أسئلة شائعة</a></li>
+    </ul>
+    <a class="btn btn-main btn-sm" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop" target="_blank" rel="noopener">اطلب عرض سعر</a>
+    <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== الهيرو ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">🖥️ يشتغل أوفلاين ١٠٠٪ — من غير إنترنت خالص</span>
+      <h1>برنامج <span class="hi">الكاشير والمخزون</span> اللي محلك محتاجه</h1>
+      <p class="lead">بيع بالباركود في ثواني، اطبع فاتورة محترمة بلوجو محلك، وشوف أرباحك الحقيقية بالمليم. برنامج واحد بيمشّي المحل كله — وتدفع فيه <strong>مرة واحدة بس</strong>.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop" target="_blank" rel="noopener">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 01-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 01-1.44-5.01c0-5.18 4.22-9.4 9.41-9.4a9.35 9.35 0 016.65 2.76 9.32 9.32 0 012.75 6.65c0 5.19-4.22 9.41-9.4 9.41zM20.5 3.49A11.3 11.3 0 0012.04 0C5.8 0 .72 5.08.72 11.32c0 1.99.52 3.94 1.51 5.66L.63 24l7.18-1.88a11.28 11.28 0 005.23 1.33h.01c6.24 0 11.32-5.08 11.32-11.32 0-3.02-1.18-5.87-3.32-8.01z"/></svg>
+          كلمنا على واتساب
+        </a>
+        <a class="btn btn-ghost" href="#screens">شوف شاشات البرنامج</a>
+      </div>
+      <ul class="chips">
+        <li>✅ <b>بدون اشتراك شهري</b></li>
+        <li>🔒 <b>بياناتك على جهازك</b></li>
+        <li>🇪🇬 <b>عربي بالكامل</b></li>
+        <li>⚡ <b>خفيف وسريع</b></li>
+      </ul>
+    </div>
+    <div class="hero-shot">
+      <img src="shot-cashier.webp" width="1600" height="978" fetchpriority="high"
+           alt="شاشة الكاشير في برنامج NewShop — بحث بالباركود وسلة بيع وإجمالي الفاتورة">
+    </div>
+  </div>
+</section>
+
+<!-- ===== المميزات ===== -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">كل اللي المحل محتاجه</div>
+      <h2>مميزات NewShop</h2>
+      <p>مش مجرد كاشير — ده نظام كامل بيمسك البيع والمخزن والحسابات والأرباح مع بعض.</p>
+    </div>
+    <div class="feat">
+      <article class="card"><div class="ic">🛒</div><h3>كاشير سريع بالباركود</h3><p>امسح الباركود وهو بيضيف على طول. الماسح بيشتغل من غير أي درايفر، ومعاك اختصارات كيبورد (F2 / F3 / F4) تخلّي البيع أسرع.</p></article>
+      <article class="card"><div class="ic">🧾</div><h3>فواتير A4 وحفظ PDF</h3><p>فاتورة محترمة فيها لوجو محلك وعنوانك ورقمك الضريبي. اطبعها على ورق أو احفظها PDF وابعتها واتساب.</p></article>
+      <article class="card"><div class="ic">📦</div><h3>مخزون متظبط لحظة بلحظة</h3><p>كل بيع وشراء ومرتجع وجرد بيتسجل في حركة الصنف بتاريخه وسببه. تعرف في أي وقت الصنف راح فين.</p></article>
+      <article class="card"><div class="ic">📈</div><h3>أرباح حقيقية بالمليم</h3><p>البرنامج بيخزن تكلفة الصنف <strong>وقت البيع</strong> نفسه، فأرباح الشهر اللي فات ماتتأثرش لو الأسعار غليت بعدها.</p></article>
+      <article class="card"><div class="ic">🚚</div><h3>مشتريات وموردين</h3><p>فاتورة الشراء بتزوّد المخزن وبتحدّث متوسط التكلفة تلقائيًا، ولكل مورد كشف حساب ومدفوعات.</p></article>
+      <article class="card"><div class="ic">👥</div><h3>عملاء وبيع آجل</h3><p>سجّل مديونية كل عميل، وشوف كشف حسابه بالتفصيل، وسجّل التحصيلات أول بأول.</p></article>
+      <article class="card"><div class="ic">↩️</div><h3>مرتجعات بيع وشراء</h3><p>الصنف بيرجع للمخزن والرصيد بيتظبط لوحده، ومش هتقدر ترجّع أكتر من الكمية اللي اتباعت فعلًا.</p></article>
+      <article class="card"><div class="ic">📋</div><h3>جرد بضغطة واحدة</h3><p>دخّل الكميات اللي عدّيتها، والبرنامج يحسبلك العجز والزيادة وقيمتها، ويسوّي المخزن ويسجل الحركة.</p></article>
+      <article class="card"><div class="ic">🔖</div><h3>ملصقات باركود</h3><p>اطبع ملصقات على شيت A4 بأي عدد، وفيها اسم المحل والصنف والسعر. وللأصناف اللي مالهاش باركود بيولّده بضغطة.</p></article>
+      <article class="card"><div class="ic">📊</div><h3>تقارير وتصدير Excel</h3><p>مبيعات يومية وبالصنف وبالعميل، تقييم المخزون، النواقص، الأصناف الراكدة، والمديونيات — وكلها بتتصدّر Excel أو PDF.</p></article>
+      <article class="card"><div class="ic">👤</div><h3>مستخدمين وصلاحيات</h3><p>افتح حساب لكل كاشير وحدّد يشوف إيه بالظبط. تقدر تمنعه من رؤية الأرباح أو تعديل الأسعار أو إلغاء الفواتير.</p></article>
+      <article class="card"><div class="ic">💾</div><h3>نسخ احتياطي تلقائي</h3><p>البرنامج بياخد نسخة لوحده كل مرة بتقفله، وبيحتفظ بآخر ١٠ نسخ. وتقدر تاخد نسخة على فلاشة في أي وقت.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الشاشات ===== -->
+<section id="screens" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">من جوه البرنامج</div>
+      <h2>شوف الشاشات بنفسك</h2>
+      <p>دي صور حقيقية من البرنامج — مش تصميمات.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="شاشات البرنامج">
+      <button class="tab" role="tab" aria-selected="true"  data-s="cashier">🛒 الكاشير</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="dashboard">🏠 لوحة التحكم</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="products">📦 الأصناف</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="reports">📈 الأرباح</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="purchases">🚚 المشتريات</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="customers">👥 العملاء</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="stocktake">📋 الجرد</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="labels">🔖 الباركود</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="users">👤 الصلاحيات</button>
+    </div>
+    <figure style="margin:0">
+      <div class="shot-box">
+        <img id="shot" src="shot-cashier.webp" width="1600" height="978" loading="lazy"
+             alt="شاشة الكاشير في برنامج NewShop">
+      </div>
+      <figcaption class="shot-cap" id="shotcap">شاشة الكاشير — بحث فوري وقراءة باركود وخصومات وتحصيل</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== ليه NewShop ===== -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">الفرق</div>
+      <h2>ليه تختار NewShop؟</h2>
+      <p>اتعمل مخصوص للمحلات في مصر والوطن العربي — بمشاكلها الحقيقية.</p>
+    </div>
+    <div class="why">
+      <article class="card"><div class="ic">📴</div><div><h3>النت مايفرقش معاك</h3><p>البرنامج بيشتغل على جهازك بالكامل. النت فصل؟ الراوتر باظ؟ البيع مكمّل عادي ومحدش هيحس.</p></div></article>
+      <article class="card"><div class="ic">💰</div><div><h3>تدفع مرة واحدة</h3><p>مافيش اشتراك شهري ولا سنوي يتراكم عليك. ترخيص مدى الحياة على جهازك.</p></div></article>
+      <article class="card"><div class="ic">🔐</div><div><h3>بياناتك ملكك إنت</h3><p>كل حاجة متخزنة على الكمبيوتر بتاعك، مش على سيرفر حد تاني. محدش يقدر يوصلها.</p></div></article>
+      <article class="card"><div class="ic">⚡</div><div><h3>خفيف وسريع</h3><p>حجم التثبيت صغير جدًا وبيفتح في ثواني، وبيشتغل كويس حتى على أجهزة قديمة.</p></div></article>
+      <article class="card"><div class="ic">🇸🇦</div><div><h3>عربي من اليمين للشمال</h3><p>مش برنامج أجنبي متعرّب. كل شاشة وكل زرار وكل تقرير متصمم عربي من الأساس.</p></div></article>
+      <article class="card"><div class="ic">🤝</div><div><h3>دعم من المبرمج نفسه</h3><p>مش سنترال ولا تذاكر دعم. بتكلم اللي عامل البرنامج على طول على واتساب.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== إزاي تشتريه ===== -->
+<section id="how" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">٣ خطوات بس</div>
+      <h2>إزاي تشتري وتشغّل البرنامج</h2>
+      <p>من أول رسالة لحد ما تبيع أول فاتورة — في نفس اليوم.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><h3>كلّمنا على واتساب</h3><p>احكيلنا عن نشاطك وحجم المحل، ونقولك البرنامج مناسب ليك ولا لأ بصراحة، ونتفق على السعر.</p></article>
+      <article class="step"><h3>نركّبه ونفعّله</h3><p>نبعتلك ملف التثبيت. البرنامج هيوريك كود جهازك، تبعته لنا، ونبعتلك كود التفعيل — ويشتغل مدى الحياة.</p></article>
+      <article class="step"><h3>اشتغل واحنا معاك</h3><p>نساعدك تدخّل أصنافك وتظبط اسم المحل واللوجو، ونفضل معاك في الدعم بعد التركيب.</p></article>
+    </div>
+    <div style="text-align:center;margin-top:34px">
+      <a class="btn btn-wa" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop%20%D9%88%D8%B3%D8%B9%D8%B1%D9%87" target="_blank" rel="noopener">ابدأ دلوقتي على واتساب</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الأسئلة الشائعة ===== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">قبل ما تسأل</div>
+      <h2>أسئلة شائعة</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>البرنامج بيشتغل من غير إنترنت فعلًا؟</summary><div class="ans"><p>أيوه، أوفلاين ١٠٠٪. مافيش أي جزء في البرنامج بيحتاج إنترنت — لا التشغيل ولا التفعيل ولا الطباعة ولا التقارير. حتى الخطوط والباركود بتتولّد جوه البرنامج نفسه.</p></div></details>
+      <details><summary>بيشتغل على أنهي نسخة ويندوز؟</summary><div class="ans"><p>ويندوز ١٠ و١١ (٦٤ بت). البرنامج خفيف وبيشتغل كويس على أجهزة متواضعة، ومحتاج بس إن ويندوز يكون محدّث.</p></div></details>
+      <details><summary>لازم يكون عندي ماسح باركود؟</summary><div class="ans"><p>لأ. تقدر تبحث بالاسم أو الكود عادي. لكن لو عندك ماسح، هيشتغل على طول من غير أي إعدادات أو درايفر — أي ماسح USB عادي يركّب ويشتغل.</p></div></details>
+      <details><summary>فيه اشتراك شهري؟</summary><div class="ans"><p>لأ خالص. تدفع مرة واحدة والترخيص مدى الحياة على جهازك. مافيش رسوم متكررة ولا تجديد.</p></div></details>
+      <details><summary>بياناتي بتتحفظ فين؟ وآمنة؟</summary><div class="ans"><p>على الكمبيوتر بتاعك إنت في مجلد خاص بالبرنامج. مافيش أي بيانات بتطلع برّه جهازك لأن البرنامج أصلًا مابيتصلش بالنت. وكلمات سر المستخدمين متشفرة.</p></div></details>
+      <details><summary>لو الجهاز باظ، بياناتي هتضيع؟</summary><div class="ans"><p>البرنامج بياخد نسخة احتياطية تلقائية كل مرة بتقفله وبيحتفظ بآخر ١٠ نسخ. وكمان تقدر تاخد نسخة بضغطة على فلاشة أو هارد خارجي، وترجّعها في أي وقت على أي جهاز.</p></div></details>
+      <details><summary>ينفع أشغّله على أكتر من جهاز؟</summary><div class="ans"><p>الترخيص لجهاز واحد. لو عندك أكتر من كاشير أو أكتر من فرع، كلّمنا ونظبطلك الوضع.</p></div></details>
+      <details><summary>ينفع أحط اسم محلي ولوجو بتاعي؟</summary><div class="ans"><p>طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة — كلها بتتغير من داخل البرنامج وبتظهر على الفواتير وملصقات الباركود.</p></div></details>
+      <details><summary>البرنامج بيدعم الفاتورة الإلكترونية للضرائب؟</summary><div class="ans"><p>نكون صريحين: البرنامج بيطبع فاتورة فيها الرقم الضريبي وكل بيانات النشاط، لكن مافيش ربط مباشر بمنظومة الفاتورة الإلكترونية للمصلحة حاليًا. لو ده مطلوب عندك، كلّمنا نتكلم في الموضوع.</p></div></details>
+      <details><summary>لو احتجت تعديل أو ميزة زيادة؟</summary><div class="ans"><p>البرنامج متعمل بالكامل من المبرمج نفسه، فالتعديلات ممكنة. احكيلنا على اللي محتاجه ونشوف.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== نداء أخير ===== -->
+<section>
+  <div class="wrap">
+    <div class="final">
+      <h2>جاهز تظبّط محلك؟</h2>
+      <p>ابعتلنا رسالة واتساب دلوقتي واحكيلنا عن نشاطك — ونقولك بصراحة البرنامج مناسب ليك ولا لأ.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-wa" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop%20%D9%88%D8%B3%D8%B9%D8%B1%D9%87" target="_blank" rel="noopener">واتساب 01000220606</a>
+        <a class="btn btn-ghost" href="mailto:egyup@outlook.com?subject=استفسار%20عن%20برنامج%20NewShop">راسلنا بالإيميل</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="logo-light.svg" alt="NewShop" width="330" height="84">
+        <p style="margin-top:14px;max-width:38ch">برنامج إدارة المبيعات والمخزون للمحلات والسوبر ماركت. يشتغل أوفلاين على ويندوز، بترخيص مدى الحياة.</p>
+      </div>
+      <div>
+        <h4>روابط</h4>
+        <ul>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#screens">شاشات البرنامج</a></li>
+          <li><a href="#how">إزاي تشتريه</a></li>
+          <li><a href="#faq">أسئلة شائعة</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><a href="https://wa.me/201000220606" target="_blank" rel="noopener">واتساب: 01000220606</a></li>
+          <li><a href="tel:+201000220606">تليفون: 01000220606</a></li>
+          <li><a href="mailto:egyup@outlook.com">egyup@outlook.com</a></li>
+          <li style="color:rgba(255,255,255,.6)">برمجة: محمد حسين علي</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> NewShop — محمد حسين علي. كل الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 01-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 01-1.44-5.01c0-5.18 4.22-9.4 9.41-9.4a9.35 9.35 0 016.65 2.76 9.32 9.32 0 012.75 6.65c0 5.19-4.22 9.41-9.4 9.41zM20.5 3.49A11.3 11.3 0 0012.04 0C5.8 0 .72 5.08.72 11.32c0 1.99.52 3.94 1.51 5.66L.63 24l7.18-1.88a11.28 11.28 0 005.23 1.33h.01c6.24 0 11.32-5.08 11.32-11.32 0-3.02-1.18-5.87-3.32-8.01z"/></svg>
+</a>
+
+<script>
+/* معرض الشاشات */
+var CAPS={
+  cashier:["شاشة الكاشير — بحث فوري وقراءة باركود وخصومات وتحصيل","شاشة الكاشير في برنامج NewShop"],
+  dashboard:["لوحة التحكم — مبيعات اليوم والأرباح والأصناف الناقصة وآخر الفواتير","لوحة تحكم NewShop بمبيعات اليوم والأرباح"],
+  products:["الأصناف والمخزون — بحث وفلاتر وتقييم المخزن وحركة كل صنف","شاشة الأصناف والمخزون في NewShop"],
+  reports:["الأرباح والخسائر — المبيعات ناقص التكلفة ناقص المصروفات","تقرير الأرباح والخسائر في NewShop"],
+  purchases:["المشتريات — فاتورة شراء بتحدّث المخزن ومتوسط التكلفة","شاشة المشتريات والموردين في NewShop"],
+  customers:["العملاء — أرصدة المديونية وكشوف الحسابات والتحصيلات","شاشة العملاء والمديونيات في NewShop"],
+  stocktake:["الجرد — إدخال الكميات الفعلية وحساب العجز والزيادة","شاشة الجرد في NewShop"],
+  labels:["ملصقات الباركود — شيت A4 بأي عدد ملصقات","شاشة طباعة ملصقات الباركود في NewShop"],
+  users:["المستخدمين والصلاحيات — كل كاشير بصلاحياته","شاشة المستخدمين والصلاحيات في NewShop"]
+};
+var img=document.getElementById('shot'), cap=document.getElementById('shotcap');
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+    t.setAttribute('aria-selected','true');
+    var k=t.dataset.s;
+    img.src='shot-'+k+'.webp';
+    img.alt=CAPS[k][1];
+    cap.textContent=CAPS[k][0];
+  });
+});
+/* قائمة الموبايل */
+var b=document.getElementById('burger'), m=document.getElementById('menu');
+b.addEventListener('click',function(){
+  var open=m.classList.toggle('open');
+  b.setAttribute('aria-expanded',open?'true':'false');
+});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+/* سنة الحقوق */
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"SoftwareApplication",
+      "name":"NewShop",
+      "alternateName":"نيوشوب",
+      "applicationCategory":"BusinessApplication",
+      "applicationSubCategory":"Point of Sale, Inventory Management",
+      "operatingSystem":"Windows 10, Windows 11",
+      "inLanguage":"ar",
+      "description":"برنامج إدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، فواتير A4، مشتريات وموردين، عملاء وآجل، جرد، ملصقات باركود، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز.",
+      "url":"https://newshop.work/",
+      "image":"https://newshop.work/og.png",
+      "featureList":[
+        "كاشير بالباركود مع اختصارات كيبورد",
+        "طباعة فواتير A4 وحفظ PDF",
+        "إدارة المخزون وحركة الأصناف",
+        "متوسط التكلفة المرجح وتقارير الأرباح",
+        "المشتريات والموردين وكشوف الحسابات",
+        "العملاء والبيع الآجل والتحصيلات",
+        "المرتجعات والجرد",
+        "طباعة ملصقات الباركود",
+        "تصدير التقارير إلى Excel و PDF",
+        "المستخدمين والصلاحيات",
+        "النسخ الاحتياطي التلقائي",
+        "يعمل بدون إنترنت"
+      ],
+      "offers":{
+        "@type":"Offer",
+        "priceCurrency":"EGP",
+        "price":"0",
+        "priceSpecification":{"@type":"PriceSpecification","priceCurrency":"EGP","valueAddedTaxIncluded":true},
+        "availability":"https://schema.org/InStock",
+        "description":"ترخيص مدى الحياة لجهاز واحد بدفعة واحدة. تواصل معنا على واتساب لمعرفة السعر."
+      },
+      "author":{"@type":"Person","name":"محمد حسين علي","telephone":"+201000220606","email":"egyup@outlook.com"},
+      "publisher":{"@type":"Organization","name":"NewShop"}
+    },
+    {
+      "@type":"Organization",
+      "name":"NewShop",
+      "url":"https://newshop.work/",
+      "logo":"https://newshop.work/logo.svg",
+      "email":"egyup@outlook.com",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "telephone":"+201000220606",
+        "contactType":"sales",
+        "availableLanguage":["ar"],
+        "areaServed":"EG"
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"البرنامج بيشتغل من غير إنترنت فعلًا؟","acceptedAnswer":{"@type":"Answer","text":"أيوه، أوفلاين 100%. مافيش أي جزء في البرنامج بيحتاج إنترنت — لا التشغيل ولا التفعيل ولا الطباعة ولا التقارير."}},
+        {"@type":"Question","name":"بيشتغل على أنهي نسخة ويندوز؟","acceptedAnswer":{"@type":"Answer","text":"ويندوز 10 و11 بنسخة 64 بت. البرنامج خفيف وبيشتغل كويس على أجهزة متواضعة."}},
+        {"@type":"Question","name":"لازم يكون عندي ماسح باركود؟","acceptedAnswer":{"@type":"Answer","text":"لأ، تقدر تبحث بالاسم أو الكود. ولو عندك ماسح USB هيشتغل على طول من غير أي درايفر أو إعدادات."}},
+        {"@type":"Question","name":"فيه اشتراك شهري؟","acceptedAnswer":{"@type":"Answer","text":"لأ. تدفع مرة واحدة والترخيص مدى الحياة على جهازك، من غير أي رسوم متكررة."}},
+        {"@type":"Question","name":"بياناتي بتتحفظ فين وآمنة؟","acceptedAnswer":{"@type":"Answer","text":"على الكمبيوتر بتاعك في مجلد خاص بالبرنامج. مافيش أي بيانات بتطلع برّه الجهاز لأن البرنامج مابيتصلش بالإنترنت، وكلمات سر المستخدمين متشفرة."}},
+        {"@type":"Question","name":"لو الجهاز باظ، بياناتي هتضيع؟","acceptedAnswer":{"@type":"Answer","text":"البرنامج بياخد نسخة احتياطية تلقائية عند كل قفل وبيحتفظ بآخر 10 نسخ، وتقدر تاخد نسخة يدوية على فلاشة وترجّعها في أي وقت."}},
+        {"@type":"Question","name":"ينفع أشغّله على أكتر من جهاز؟","acceptedAnswer":{"@type":"Answer","text":"الترخيص لجهاز واحد. لو عندك أكتر من كاشير أو فرع، تواصل معنا لترتيب الوضع."}},
+        {"@type":"Question","name":"ينفع أحط اسم محلي ولوجو بتاعي؟","acceptedAnswer":{"@type":"Answer","text":"طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة كلها بتتغير من داخل البرنامج."}},
+        {"@type":"Question","name":"البرنامج بيدعم الفاتورة الإلكترونية للضرائب؟","acceptedAnswer":{"@type":"Answer","text":"البرنامج بيطبع فاتورة فيها الرقم الضريبي وبيانات النشاط، لكن مافيش ربط مباشر بمنظومة الفاتورة الإلكترونية حاليًا."}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
