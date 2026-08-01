@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>NewShop — برنامج كاشير ومخزون وفواتير للمحلات | يشتغل أوفلاين بدون إنترنت</title>
-<meta name="description" content="برنامج NewShop لإدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، فواتير A4، مشتريات وموردين، عملاء وآجل، جرد، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز بدون اشتراك شهري.">
-<meta name="keywords" content="برنامج كاشير, برنامج مخزون, برنامج فواتير, برنامج محلات, برنامج سوبر ماركت, برنامج مبيعات عربي, كاشير أوفلاين, برنامج جرد, برنامج باركود">
+<title>NewShop — برنامج كاشير ومخزون وفواتير للمحلات | طابعة حرارية ويشتغل أوفلاين</title>
+<meta name="description" content="برنامج NewShop لإدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، طباعة على الطابعة الحرارية 80/58 مم، دفع مقسّم (كاش وفيزا ومحفظة وآجل)، ورديات وتقفيل درج، استيراد الأصناف من إكسل، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز بدون اشتراك شهري.">
+<meta name="keywords" content="برنامج كاشير, برنامج مخزون, برنامج فواتير, برنامج محلات, برنامج سوبر ماركت, برنامج مبيعات عربي, كاشير أوفلاين, برنامج جرد, برنامج باركود, طابعة حرارية, تقفيل وردية, باركود ميزان, استيراد أصناف من إكسل">
 <meta name="author" content="محمد حسين علي">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#5c6b4a">
@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="NewShop">
 <meta property="og:locale" content="ar_EG">
 <meta property="og:title" content="NewShop — برنامج كاشير ومخزون وفواتير للمحلات">
-<meta property="og:description" content="كاشير بالباركود، فواتير A4، مخزون وأرباح دقيقة. يشتغل أوفلاين 100% على ويندوز. دفعة واحدة بدون اشتراك شهري.">
+<meta property="og:description" content="كاشير بالباركود، طابعة حرارية، دفع مقسّم، ورديات وتقفيل درج، واستيراد من إكسل. يشتغل أوفلاين 100% على ويندوز. دفعة واحدة بدون اشتراك شهري.">
 <meta property="og:url" content="https://newshop.work/">
 <meta property="og:image" content="https://newshop.work/og.png">
 <meta property="og:image:width" content="1200">
@@ -26,7 +26,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NewShop — برنامج كاشير ومخزون وفواتير للمحلات">
-<meta name="twitter:description" content="كاشير بالباركود، فواتير A4، مخزون وأرباح دقيقة. يشتغل أوفلاين 100% على ويندوز.">
+<meta name="twitter:description" content="كاشير بالباركود، طابعة حرارية، ورديات وتقفيل درج، واستيراد من إكسل. يشتغل أوفلاين 100% على ويندوز.">
 <meta name="twitter:image" content="https://newshop.work/og.png">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -200,6 +200,13 @@ footer a:hover{color:#fff;text-decoration:underline}
   .cta-row .btn{width:100%;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.rcpt-fig{margin:34px auto 0;max-width:520px;display:flex;gap:22px;align-items:center;
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.rcpt-fig img{width:150px;height:auto;border:1px solid var(--line);border-radius:8px;flex:0 0 150px}
+.rcpt-fig figcaption{font-size:14px;color:var(--ink2);line-height:1.9}
+@media(max-width:560px){.rcpt-fig{flex-direction:column;text-align:center;max-width:340px}
+  .rcpt-fig img{flex:none}}
 </style>
 </head>
 
@@ -212,6 +219,7 @@ footer a:hover{color:#fff;text-decoration:underline}
       <img src="logo.svg" alt="NewShop" width="330" height="84">
     </a>
     <ul id="menu">
+      <li><a class="lnk" href="#new">الجديد ✨</a></li>
       <li><a class="lnk" href="#features">المميزات</a></li>
       <li><a class="lnk" href="#screens">الشاشات</a></li>
       <li><a class="lnk" href="#why">ليه NewShop</a></li>
@@ -229,9 +237,9 @@ footer a:hover{color:#fff;text-decoration:underline}
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">🖥️ يشتغل أوفلاين ١٠٠٪ — من غير إنترنت خالص</span>
+      <span class="eyebrow">✨ النسخة ١٫١ نزلت — طابعة حرارية وورديات ودفع مقسّم</span>
       <h1>برنامج <span class="hi">الكاشير والمخزون</span> اللي محلك محتاجه</h1>
-      <p class="lead">بيع بالباركود في ثواني، اطبع فاتورة محترمة بلوجو محلك، وشوف أرباحك الحقيقية بالمليم. برنامج واحد بيمشّي المحل كله — وتدفع فيه <strong>مرة واحدة بس</strong>.</p>
+      <p class="lead">بيع بالباركود في ثواني، اطبع على الطابعة الحرارية أو A4، اقفل درج الكاشير بالمليم في آخر اليوم، وشوف أرباحك الحقيقية. برنامج واحد بيمشّي المحل كله — وتدفع فيه <strong>مرة واحدة بس</strong>.</p>
       <div class="cta-row">
         <a class="btn btn-wa" href="https://wa.me/201000220606?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20NewShop" target="_blank" rel="noopener">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 01-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 01-1.44-5.01c0-5.18 4.22-9.4 9.41-9.4a9.35 9.35 0 016.65 2.76 9.32 9.32 0 012.75 6.65c0 5.19-4.22 9.41-9.4 9.41zM20.5 3.49A11.3 11.3 0 0012.04 0C5.8 0 .72 5.08.72 11.32c0 1.99.52 3.94 1.51 5.66L.63 24l7.18-1.88a11.28 11.28 0 005.23 1.33h.01c6.24 0 11.32-5.08 11.32-11.32 0-3.02-1.18-5.87-3.32-8.01z"/></svg>
@@ -241,15 +249,40 @@ footer a:hover{color:#fff;text-decoration:underline}
       </div>
       <ul class="chips">
         <li>✅ <b>بدون اشتراك شهري</b></li>
-        <li>🔒 <b>بياناتك على جهازك</b></li>
+        <li>📴 <b>أوفلاين ١٠٠٪</b></li>
+        <li>🧾 <b>طابعة حرارية و A4</b></li>
         <li>🇪🇬 <b>عربي بالكامل</b></li>
-        <li>⚡ <b>خفيف وسريع</b></li>
       </ul>
     </div>
     <div class="hero-shot">
       <img src="shot-cashier.webp" width="1600" height="978" fetchpriority="high"
            alt="شاشة الكاشير في برنامج NewShop — بحث بالباركود وسلة بيع وإجمالي الفاتورة">
     </div>
+  </div>
+</section>
+
+<!-- ===== الجديد في النسخة ١٫١ ===== -->
+<section id="new" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">تحديث</div>
+      <h2>الجديد في النسخة ١٫١</h2>
+      <p>ست إضافات كبيرة اتعملت بناءً على اللي المحلات بتطلبه فعلًا.</p>
+    </div>
+    <div class="feat">
+      <article class="card"><div class="ic">🧾</div><h3>الطابعة الحرارية ٨٠ و٥٨ مم</h3><p>إيصال رول زي أي كاشير محترف، فيه باركود رقم الفاتورة عشان المرتجعات. وفاتورة A4 لسه موجودة — تختار من الإعدادات.</p></article>
+      <article class="card"><div class="ic">💳</div><h3>دفع مقسّم في نفس الفاتورة</h3><p>كاش + فيزا + انستاباي + آجل مع بعض. وصاحب المحل بيقفل الطرق اللي مابيستخدمهاش عشان شاشة الكاشير تفضل بسيطة.</p></article>
+      <article class="card"><div class="ic">🗄️</div><h3>ورديات وتقفيل درج</h3><p>الكاشير يفتح وردية برصيد بداية، وفي الآخر البرنامج يقولك المفروض في الدرج كام — والفرق بيتسجّل عجز أو زيادة باسم الموظف.</p></article>
+      <article class="card"><div class="ic">📥</div><h3>استيراد الأصناف من إكسل</h3><p>عندك ٢٠٠٠ صنف؟ ارفع ملف الإكسل وخلاص. البرنامج بيربط الأعمدة لوحده وبيوريك <strong>معاينة</strong> قبل ما يغيّر أي حاجة.</p></article>
+      <article class="card"><div class="ic">⚖️</div><h3>باركود الميزان</h3><p>للجزارة والخضار والجبن — امسح باركود الميزان والوزن يتحط لوحده. بيتظبط على أي ميزان، وفيه خانة تجربة في الإعدادات.</p></article>
+      <article class="card"><div class="ic">🔔</div><h3>تنبيهات ووضع ليلي</h3><p>أول ما تفتح البرنامج بيقولك: إيه اللي خلص، مين العميل المتأخر، وإيه الفلوس الواقفة في المخزن. وفيه ٣ ثيمات منهم وضع ليلي.</p></article>
+    </div>
+
+    <figure class="rcpt-fig">
+      <img src="shot-receipt.webp" width="273" height="511" loading="lazy"
+           alt="إيصال مطبوع من برنامج NewShop على طابعة حرارية 80 مم فيه الأصناف والإجمالي وطرق الدفع وباركود رقم الفاتورة">
+      <figcaption>إيصال حقيقي من الطابعة الحرارية ٨٠ مم — الأصناف، الإجمالي، تفصيل الدفع، وباركود رقم الفاتورة</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -273,13 +306,16 @@ footer a:hover{color:#fff;text-decoration:underline}
       <article class="card"><div class="ic">🔖</div><h3>ملصقات باركود</h3><p>اطبع ملصقات على شيت A4 بأي عدد، وفيها اسم المحل والصنف والسعر. وللأصناف اللي مالهاش باركود بيولّده بضغطة.</p></article>
       <article class="card"><div class="ic">📊</div><h3>تقارير وتصدير Excel</h3><p>مبيعات يومية وبالصنف وبالعميل، تقييم المخزون، النواقص، الأصناف الراكدة، والمديونيات — وكلها بتتصدّر Excel أو PDF.</p></article>
       <article class="card"><div class="ic">👤</div><h3>مستخدمين وصلاحيات</h3><p>افتح حساب لكل كاشير وحدّد يشوف إيه بالظبط. تقدر تمنعه من رؤية الأرباح أو تعديل الأسعار أو إلغاء الفواتير.</p></article>
+      <article class="card"><div class="ic">🗄️</div><h3>ورديات وتقفيل الدرج</h3><p>كل كاشير بورديته، وفي آخر اليوم تقرير Z بيقارن اللي المفروض في الدرج باللي اتعدّ فعلًا ويطلّع العجز أو الزيادة.</p></article>
+      <article class="card"><div class="ic">📥</div><h3>استيراد من إكسل و CSV</h3><p>ادخل أصنافك وعملاءك من ملف بدل ما تكتبهم واحد واحد، مع معاينة توضّح الجديد والمعدَّل والصفوف اللي فيها غلط.</p></article>
+      <article class="card"><div class="ic">🔔</div><h3>تنبيهات يومية</h3><p>نواقص المخزون، أصناف قرّبت تخلص، عملاء متأخرين في السداد، وأصناف راكدة فلوسك واقفة فيها.</p></article>
       <article class="card"><div class="ic">💾</div><h3>نسخ احتياطي تلقائي</h3><p>البرنامج بياخد نسخة لوحده كل مرة بتقفله، وبيحتفظ بآخر ١٠ نسخ. وتقدر تاخد نسخة على فلاشة في أي وقت.</p></article>
     </div>
   </div>
 </section>
 
 <!-- ===== الشاشات ===== -->
-<section id="screens" class="alt">
+<section id="screens">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">من جوه البرنامج</div>
@@ -288,6 +324,8 @@ footer a:hover{color:#fff;text-decoration:underline}
     </div>
     <div class="tabs" role="tablist" aria-label="شاشات البرنامج">
       <button class="tab" role="tab" aria-selected="true"  data-s="cashier">🛒 الكاشير</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="split">💳 الدفع المقسّم</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="shifts">🗄️ الورديات</button>
       <button class="tab" role="tab" aria-selected="false" data-s="dashboard">🏠 لوحة التحكم</button>
       <button class="tab" role="tab" aria-selected="false" data-s="products">📦 الأصناف</button>
       <button class="tab" role="tab" aria-selected="false" data-s="reports">📈 الأرباح</button>
@@ -295,6 +333,8 @@ footer a:hover{color:#fff;text-decoration:underline}
       <button class="tab" role="tab" aria-selected="false" data-s="customers">👥 العملاء</button>
       <button class="tab" role="tab" aria-selected="false" data-s="stocktake">📋 الجرد</button>
       <button class="tab" role="tab" aria-selected="false" data-s="labels">🔖 الباركود</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="import">📥 الاستيراد</button>
+      <button class="tab" role="tab" aria-selected="false" data-s="dark">🌙 الوضع الليلي</button>
       <button class="tab" role="tab" aria-selected="false" data-s="users">👤 الصلاحيات</button>
     </div>
     <figure style="margin:0">
@@ -308,7 +348,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 </section>
 
 <!-- ===== ليه NewShop ===== -->
-<section id="why">
+<section id="why" class="alt">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">الفرق</div>
@@ -327,7 +367,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 </section>
 
 <!-- ===== إزاي تشتريه ===== -->
-<section id="how" class="alt">
+<section id="how">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">٣ خطوات بس</div>
@@ -346,7 +386,7 @@ footer a:hover{color:#fff;text-decoration:underline}
 </section>
 
 <!-- ===== الأسئلة الشائعة ===== -->
-<section id="faq">
+<section id="faq" class="alt">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">قبل ما تسأل</div>
@@ -354,13 +394,20 @@ footer a:hover{color:#fff;text-decoration:underline}
     </div>
     <div class="faq">
       <details open><summary>البرنامج بيشتغل من غير إنترنت فعلًا؟</summary><div class="ans"><p>أيوه، أوفلاين ١٠٠٪. مافيش أي جزء في البرنامج بيحتاج إنترنت — لا التشغيل ولا التفعيل ولا الطباعة ولا التقارير. حتى الخطوط والباركود بتتولّد جوه البرنامج نفسه.</p></div></details>
+      <details><summary>بيشتغل مع الطابعة الحرارية ولا A4 بس؟</summary><div class="ans"><p>الاتنين. البرنامج بيطبع على الطابعة الحرارية مقاس <strong>٨٠ مم</strong> و<strong>٥٨ مم</strong>، وبيطبع كمان فاتورة <strong>A4</strong> كاملة — وإنت اللي بتختار من الإعدادات. الإيصال الحراري فيه باركود رقم الفاتورة عشان تلاقيها بسرعة وقت المرتجع. ولو عايز تحفظ فاتورة PDF، من نافذة الطباعة اختار «Microsoft Print to PDF».</p></div></details>
+      <details><summary>عندي ٢٠٠٠ صنف — هدخّلهم واحد واحد؟</summary><div class="ans"><p>لأ. ارفع ملف <strong>إكسل أو CSV</strong> والبرنامج هيربط الأعمدة لوحده (الاسم، الكود، الباركود، السعر، الكمية…). وقبل ما يغيّر أي حاجة بيوريك <strong>معاينة</strong> فيها: هيتضاف كام صنف جديد، هيتعدّل كام صنف موجود، وإيه الصفوف اللي فيها غلط والسبب. وفيه زرار بينزّلك ملف نموذجي فاضي بالأعمدة الصح تملاه.</p></div></details>
+      <details><summary>ينفع أقبل فيزا وانستاباي مع الكاش في نفس الفاتورة؟</summary><div class="ans"><p>أيوه. الفاتورة الواحدة ممكن تتقسم على <strong>كاش + كارت + محفظة إلكترونية + آجل</strong> مع بعض، وكل مبلغ بيتسجّل بطريقته. ولو محلك مابيقبلش كارت مثلًا، تقفله من الإعدادات وشاشة الكاشير تفضل نضيفة.</p></div></details>
+      <details><summary>إزاي أطمّن إن فلوس الكاشير مظبوطة؟</summary><div class="ans"><p>من نظام <strong>الورديات وتقفيل الدرج</strong>. الكاشير بيفتح وردية برصيد بداية، وكل بيع وتحصيل ومصروف بيترّبط بيها. في آخر الوردية البرنامج بيحسب المفروض في الدرج كام، والكاشير بيعدّ اللي معاه، و<strong>الفرق بيتسجّل عجز أو زيادة</strong> باسمه في تقرير Z. وكمان البيع بكمية أكبر من المخزون محتاج <strong>موافقة مدير بكلمة سر</strong>، وكل تجاوز بيتسجّل في سجل النشاط.</p></div></details>
+      <details><summary>عندي ميزان بيطبع باركود — البرنامج بيقراه؟</summary><div class="ans"><p>أيوه. امسح باركود الميزان والبرنامج بيقرا كود الصنف والوزن (أو السعر) ويحط الكمية لوحده. الميزان بتاعك ممكن يكون صيغته مختلفة، فكل الإعدادات قابلة للتعديل، وفيه <strong>خانة تجربة</strong> في الإعدادات تمسح فيها باركود حقيقي وتتأكد إنه اتقرا صح قبل ما تشتغل بيه.</p></div></details>
       <details><summary>بيشتغل على أنهي نسخة ويندوز؟</summary><div class="ans"><p>ويندوز ١٠ و١١ (٦٤ بت). البرنامج خفيف وبيشتغل كويس على أجهزة متواضعة، ومحتاج بس إن ويندوز يكون محدّث.</p></div></details>
       <details><summary>لازم يكون عندي ماسح باركود؟</summary><div class="ans"><p>لأ. تقدر تبحث بالاسم أو الكود عادي. لكن لو عندك ماسح، هيشتغل على طول من غير أي إعدادات أو درايفر — أي ماسح USB عادي يركّب ويشتغل.</p></div></details>
       <details><summary>فيه اشتراك شهري؟</summary><div class="ans"><p>لأ خالص. تدفع مرة واحدة والترخيص مدى الحياة على جهازك. مافيش رسوم متكررة ولا تجديد.</p></div></details>
       <details><summary>بياناتي بتتحفظ فين؟ وآمنة؟</summary><div class="ans"><p>على الكمبيوتر بتاعك إنت في مجلد خاص بالبرنامج. مافيش أي بيانات بتطلع برّه جهازك لأن البرنامج أصلًا مابيتصلش بالنت. وكلمات سر المستخدمين متشفرة.</p></div></details>
       <details><summary>لو الجهاز باظ، بياناتي هتضيع؟</summary><div class="ans"><p>البرنامج بياخد نسخة احتياطية تلقائية كل مرة بتقفله وبيحتفظ بآخر ١٠ نسخ. وكمان تقدر تاخد نسخة بضغطة على فلاشة أو هارد خارجي، وترجّعها في أي وقت على أي جهاز.</p></div></details>
-      <details><summary>ينفع أشغّله على أكتر من جهاز؟</summary><div class="ans"><p>الترخيص لجهاز واحد. لو عندك أكتر من كاشير أو أكتر من فرع، كلّمنا ونظبطلك الوضع.</p></div></details>
-      <details><summary>ينفع أحط اسم محلي ولوجو بتاعي؟</summary><div class="ans"><p>طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة — كلها بتتغير من داخل البرنامج وبتظهر على الفواتير وملصقات الباركود.</p></div></details>
+      <details><summary>ينفع أشغّله على أكتر من جهاز أو فرع؟</summary><div class="ans"><p>أيوه — بس خلينا دقيقين. كل جهاز ليه كود تفعيل خاص بيه، وبنقدر نصدرلك تراخيص لأكتر من جهاز أو فرع، وكل جهاز بيشتغل ببياناته. اللي <strong>لسه مش متاح</strong> هو إن كاشيرين يشتغلوا على <strong>نفس البيانات في نفس اللحظة</strong> عن طريق الشبكة — ده محتاج تعديل أكبر، ولو ده اللي محتاجه كلّمنا نتكلم فيه.</p></div></details>
+      <details><summary>عندي النسخة القديمة — أعمل إيه عشان أحدّث؟</summary><div class="ans"><p>تركّب النسخة الجديدة فوق القديمة عادي. أول ما تفتحها البرنامج <strong>بياخد نسخة احتياطية من بياناتك تلقائيًا</strong> وبعدين بيحدّث قاعدة البيانات لوحده — أصنافك وفواتيرك وعملاؤك كلهم زي ما هم. ولو النسخة الاحتياطية فشلت لأي سبب، التحديث مابيتنفذش أصلًا.</p></div></details>
+      <details><summary>فيه وضع ليلي؟</summary><div class="ans"><p>أيوه، فيه ٣ مظاهر: زيتي، أزرق سماوي/رمادي، ووضع ليلي غامق للشغل بالليل. التبديل بينهم بضغطة من أعلى الشاشة والاختيار بيتحفظ.</p></div></details>
+      <details><summary>ينفع أحط اسم محلي ولوجو بتاعي؟</summary><div class="ans"><p>طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة — كلها بتتغير من داخل البرنامج وبتظهر على الفواتير والإيصالات وملصقات الباركود.</p></div></details>
       <details><summary>البرنامج بيدعم الفاتورة الإلكترونية للضرائب؟</summary><div class="ans"><p>نكون صريحين: البرنامج بيطبع فاتورة فيها الرقم الضريبي وكل بيانات النشاط، لكن مافيش ربط مباشر بمنظومة الفاتورة الإلكترونية للمصلحة حاليًا. لو ده مطلوب عندك، كلّمنا نتكلم في الموضوع.</p></div></details>
       <details><summary>لو احتجت تعديل أو ميزة زيادة؟</summary><div class="ans"><p>البرنامج متعمل بالكامل من المبرمج نفسه، فالتعديلات ممكنة. احكيلنا على اللي محتاجه ونشوف.</p></div></details>
     </div>
@@ -393,6 +440,7 @@ footer a:hover{color:#fff;text-decoration:underline}
       <div>
         <h4>روابط</h4>
         <ul>
+          <li><a href="#new">الجديد في ١٫١</a></li>
           <li><a href="#features">المميزات</a></li>
           <li><a href="#screens">شاشات البرنامج</a></li>
           <li><a href="#how">إزاي تشتريه</a></li>
@@ -428,7 +476,11 @@ var CAPS={
   customers:["العملاء — أرصدة المديونية وكشوف الحسابات والتحصيلات","شاشة العملاء والمديونيات في NewShop"],
   stocktake:["الجرد — إدخال الكميات الفعلية وحساب العجز والزيادة","شاشة الجرد في NewShop"],
   labels:["ملصقات الباركود — شيت A4 بأي عدد ملصقات","شاشة طباعة ملصقات الباركود في NewShop"],
-  users:["المستخدمين والصلاحيات — كل كاشير بصلاحياته","شاشة المستخدمين والصلاحيات في NewShop"]
+  users:["المستخدمين والصلاحيات — كل كاشير بصلاحياته","شاشة المستخدمين والصلاحيات في NewShop"],
+  split:["الدفع المقسّم — الفاتورة الواحدة تتقسم على كاش وفيزا ومحفظة وآجل","شاشة الدفع المقسّم في برنامج NewShop"],
+  shifts:["الورديات وتقفيل الدرج — المفروض في الدرج كام والفرق بينه وبين المعدود","شاشة الورديات وتقفيل درج الكاشير في NewShop"],
+  import:["استيراد الأصناف من إكسل — معاينة توضّح الجديد والمعدَّل والصفوف اللي فيها مشاكل","شاشة استيراد الأصناف من ملف إكسل في NewShop"],
+  dark:["الوضع الليلي — ٣ ثيمات والتبديل بينهم فوري","الوضع الليلي في برنامج NewShop"]
 };
 var img=document.getElementById('shot'), cap=document.getElementById('shotcap');
 document.querySelectorAll('.tab').forEach(function(t){
@@ -462,14 +514,23 @@ document.getElementById('yr').textContent=new Date().getFullYear();
       "alternateName":"نيوشوب",
       "applicationCategory":"BusinessApplication",
       "applicationSubCategory":"Point of Sale, Inventory Management",
+      "softwareVersion":"1.1",
+      "releaseNotes":"إضافة الطباعة على الطابعة الحرارية 80 و58 مم، الدفع المقسّم بأكتر من طريقة في نفس الفاتورة، الورديات وتقفيل درج الكاشير بتقرير X و Z، استيراد الأصناف والعملاء من ملفات إكسل و CSV، قراءة باركود الميزان، لوحة تنبيهات يومية، و3 مظاهر منها وضع ليلي.",
       "operatingSystem":"Windows 10, Windows 11",
       "inLanguage":"ar",
-      "description":"برنامج إدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، فواتير A4، مشتريات وموردين، عملاء وآجل، جرد، ملصقات باركود، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز.",
+      "description":"برنامج إدارة المبيعات والمخزون للمحلات والسوبر ماركت. كاشير بالباركود، طباعة على الطابعة الحرارية 80 و58 مم أو فواتير A4، دفع مقسّم بين الكاش والكارت والمحفظة والآجل، ورديات وتقفيل درج، استيراد الأصناف من إكسل، قراءة باركود الميزان، وتقارير أرباح. يشتغل أوفلاين 100% على ويندوز.",
       "url":"https://newshop.work/",
       "image":"https://newshop.work/og.png",
       "featureList":[
         "كاشير بالباركود مع اختصارات كيبورد",
+        "طباعة على الطابعة الحرارية 80 مم و58 مم",
         "طباعة فواتير A4 وحفظ PDF",
+        "دفع مقسّم: كاش وكارت ومحفظة وآجل في نفس الفاتورة",
+        "ورديات وتقفيل درج الكاشير بتقرير X و Z",
+        "استيراد الأصناف والعملاء من إكسل و CSV",
+        "قراءة باركود الميزان للأصناف الموزونة",
+        "تنبيهات النواقص والعملاء المتأخرين والأصناف الراكدة",
+        "3 مظاهر منها وضع ليلي",
         "إدارة المخزون وحركة الأصناف",
         "متوسط التكلفة المرجح وتقارير الأرباح",
         "المشتريات والموردين وكشوف الحسابات",
@@ -487,7 +548,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
         "price":"0",
         "priceSpecification":{"@type":"PriceSpecification","priceCurrency":"EGP","valueAddedTaxIncluded":true},
         "availability":"https://schema.org/InStock",
-        "description":"ترخيص مدى الحياة لجهاز واحد بدفعة واحدة. تواصل معنا على واتساب لمعرفة السعر."
+        "description":"ترخيص مدى الحياة بدفعة واحدة لكل جهاز. تواصل معنا على واتساب لمعرفة السعر."
       },
       "author":{"@type":"Person","name":"محمد حسين علي","telephone":"+201000220606","email":"egyup@outlook.com"},
       "publisher":{"@type":"Organization","name":"NewShop"}
@@ -509,15 +570,142 @@ document.getElementById('yr').textContent=new Date().getFullYear();
     {
       "@type":"FAQPage",
       "mainEntity":[
-        {"@type":"Question","name":"البرنامج بيشتغل من غير إنترنت فعلًا؟","acceptedAnswer":{"@type":"Answer","text":"أيوه، أوفلاين 100%. مافيش أي جزء في البرنامج بيحتاج إنترنت — لا التشغيل ولا التفعيل ولا الطباعة ولا التقارير."}},
-        {"@type":"Question","name":"بيشتغل على أنهي نسخة ويندوز؟","acceptedAnswer":{"@type":"Answer","text":"ويندوز 10 و11 بنسخة 64 بت. البرنامج خفيف وبيشتغل كويس على أجهزة متواضعة."}},
-        {"@type":"Question","name":"لازم يكون عندي ماسح باركود؟","acceptedAnswer":{"@type":"Answer","text":"لأ، تقدر تبحث بالاسم أو الكود. ولو عندك ماسح USB هيشتغل على طول من غير أي درايفر أو إعدادات."}},
-        {"@type":"Question","name":"فيه اشتراك شهري؟","acceptedAnswer":{"@type":"Answer","text":"لأ. تدفع مرة واحدة والترخيص مدى الحياة على جهازك، من غير أي رسوم متكررة."}},
-        {"@type":"Question","name":"بياناتي بتتحفظ فين وآمنة؟","acceptedAnswer":{"@type":"Answer","text":"على الكمبيوتر بتاعك في مجلد خاص بالبرنامج. مافيش أي بيانات بتطلع برّه الجهاز لأن البرنامج مابيتصلش بالإنترنت، وكلمات سر المستخدمين متشفرة."}},
-        {"@type":"Question","name":"لو الجهاز باظ، بياناتي هتضيع؟","acceptedAnswer":{"@type":"Answer","text":"البرنامج بياخد نسخة احتياطية تلقائية عند كل قفل وبيحتفظ بآخر 10 نسخ، وتقدر تاخد نسخة يدوية على فلاشة وترجّعها في أي وقت."}},
-        {"@type":"Question","name":"ينفع أشغّله على أكتر من جهاز؟","acceptedAnswer":{"@type":"Answer","text":"الترخيص لجهاز واحد. لو عندك أكتر من كاشير أو فرع، تواصل معنا لترتيب الوضع."}},
-        {"@type":"Question","name":"ينفع أحط اسم محلي ولوجو بتاعي؟","acceptedAnswer":{"@type":"Answer","text":"طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة كلها بتتغير من داخل البرنامج."}},
-        {"@type":"Question","name":"البرنامج بيدعم الفاتورة الإلكترونية للضرائب؟","acceptedAnswer":{"@type":"Answer","text":"البرنامج بيطبع فاتورة فيها الرقم الضريبي وبيانات النشاط، لكن مافيش ربط مباشر بمنظومة الفاتورة الإلكترونية حاليًا."}}
+              {
+                      "@type": "Question",
+                      "name": "البرنامج بيشتغل من غير إنترنت فعلًا؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "أيوه، أوفلاين 100%. مافيش أي جزء في البرنامج بيحتاج إنترنت — لا التشغيل ولا التفعيل ولا الطباعة ولا التقارير."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "بيشتغل مع الطابعة الحرارية ولا A4 بس؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "الاتنين. البرنامج بيطبع على الطابعة الحرارية 80 مم و58 مم، وبيطبع كمان فاتورة A4 كاملة، والاختيار من الإعدادات. الإيصال الحراري فيه باركود رقم الفاتورة."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "عندي ٢٠٠٠ صنف — هدخّلهم واحد واحد؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "لأ. ارفع ملف إكسل أو CSV والبرنامج بيربط الأعمدة لوحده، وبيوريك معاينة قبل التنفيذ توضّح كام صنف جديد وكام هيتعدّل وإيه الصفوف اللي فيها غلط. وفيه ملف نموذجي جاهز تنزّله."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "ينفع أقبل فيزا وانستاباي مع الكاش في نفس الفاتورة؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "أيوه. الفاتورة الواحدة ممكن تتقسم على كاش وكارت ومحفظة إلكترونية وآجل مع بعض، وكل مبلغ بيتسجّل بطريقته. والطرق اللي مابتستخدمهاش بتقفلها من الإعدادات."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "إزاي أطمّن إن فلوس الكاشير مظبوطة؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "من نظام الورديات وتقفيل الدرج: الكاشير بيفتح وردية برصيد بداية، وفي الآخر البرنامج بيحسب المفروض في الدرج والفرق بينه وبين المعدود بيتسجّل عجز أو زيادة في تقرير Z. وكمان البيع بكمية أكبر من المخزون محتاج موافقة مدير بكلمة سر."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "عندي ميزان بيطبع باركود — البرنامج بيقراه؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "أيوه. امسح باركود الميزان والبرنامج بيقرا كود الصنف والوزن أو السعر ويحط الكمية لوحده. الصيغة قابلة للتعديل حسب الميزان، وفيه خانة تجربة في الإعدادات."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "بيشتغل على أنهي نسخة ويندوز؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "ويندوز 10 و11 بنسخة 64 بت. البرنامج خفيف وبيشتغل كويس على أجهزة متواضعة."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "لازم يكون عندي ماسح باركود؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "لأ، تقدر تبحث بالاسم أو الكود. ولو عندك ماسح USB هيشتغل على طول من غير أي درايفر أو إعدادات."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "فيه اشتراك شهري؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "لأ. تدفع مرة واحدة والترخيص مدى الحياة على جهازك، من غير أي رسوم متكررة."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "بياناتي بتتحفظ فين؟ وآمنة؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "على الكمبيوتر بتاعك في مجلد خاص بالبرنامج. مافيش أي بيانات بتطلع برّه الجهاز لأن البرنامج مابيتصلش بالإنترنت، وكلمات سر المستخدمين متشفرة."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "لو الجهاز باظ، بياناتي هتضيع؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "البرنامج بياخد نسخة احتياطية تلقائية عند كل قفل وبيحتفظ بآخر 10 نسخ، وتقدر تاخد نسخة يدوية على فلاشة وترجّعها في أي وقت."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "ينفع أشغّله على أكتر من جهاز أو فرع؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "أيوه. كل جهاز ليه كود تفعيل خاص بيه، وبنقدر نصدر تراخيص لأكتر من جهاز أو فرع وكل جهاز بيشتغل ببياناته. اللي لسه مش متاح هو مشاركة نفس البيانات بين كاشيرين في نفس اللحظة عن طريق الشبكة."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "عندي النسخة القديمة — أعمل إيه عشان أحدّث؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "تركّب النسخة الجديدة فوق القديمة. أول ما تفتحها البرنامج بياخد نسخة احتياطية من بياناتك تلقائيًا وبعدين بيحدّث قاعدة البيانات لوحده، وكل بياناتك بتفضل زي ما هي."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "فيه وضع ليلي؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "أيوه، فيه 3 مظاهر: زيتي، وأزرق سماوي رمادي، ووضع ليلي غامق. التبديل بضغطة والاختيار بيتحفظ."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "ينفع أحط اسم محلي ولوجو بتاعي؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "طبعًا. اسم النشاط واللوجو والعنوان والتليفون والرقم الضريبي والعملة وتذييل الفاتورة كلها بتتغير من داخل البرنامج."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "البرنامج بيدعم الفاتورة الإلكترونية للضرائب؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "البرنامج بيطبع فاتورة فيها الرقم الضريبي وبيانات النشاط، لكن مافيش ربط مباشر بمنظومة الفاتورة الإلكترونية حاليًا."
+                      }
+              },
+              {
+                      "@type": "Question",
+                      "name": "لو احتجت تعديل أو ميزة زيادة؟",
+                      "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "البرنامج متعمل بالكامل من المبرمج نفسه، فالتعديلات ممكنة. تواصل معنا بالتفاصيل."
+                      }
+              }
       ]
     }
   ]
